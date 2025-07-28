@@ -34,7 +34,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
       <nav>
-        <Link to="/">home</Link> | <Link to="/about">소개</Link>
+        <Link to="/">home</Link> | <Link to="/about">소개</Link> | <Link to="/feedback">피드백</Link>
       </nav>
         {children}
         <ScrollRestoration />
