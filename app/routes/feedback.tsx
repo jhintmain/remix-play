@@ -2,7 +2,7 @@ import {type ActionFunctionArgs} from "@remix-run/node";
 import {useFetcher, useLoaderData} from "@remix-run/react";
 import {jsonResponse} from "~/utils/response.server";
 
-let messages: string[] = [
+const messages: string[] = [
     "Remix 시작해보자",
     "미뤘던 ts도 공부도",
 ]
