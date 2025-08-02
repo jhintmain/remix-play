@@ -1,3 +1,4 @@
+/*
 console.log("========== interface ==============");
 type Score = 'A' | 'B' | 'C' | 'D' | 'E' | 'F';
 
@@ -48,3 +49,4 @@ const isAdultFn : IsAdult = function (age: number): boolean {
 
 console.log(isAdultFn(20)); // true
 
+*/

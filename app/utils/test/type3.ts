@@ -1,3 +1,4 @@
+/*
 console.log("========== class ==============");
 
 interface Car{
@@ -80,4 +81,4 @@ const toyCar: ToyCar = {
     }
 };
 toyCar.play(); // 또봇 is playing!
-toyCar.drive(); // Driving the red 또봇 브랜드 at 100 km/h!
+toyCar.drive(); // Driving the red 또봇 브랜드 at 100 km/h!*/

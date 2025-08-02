@@ -1,3 +1,4 @@
+/*
 function add(a: number, b: number): number {
     return a + b;
 }
@@ -76,4 +77,4 @@ console.log(Os[10]);
 let myOs: Os;
 
 myOs = Os.MacOS;
-console.log(myOs); // 1
+console.log(myOs); // 1*/

@@ -1,3 +1,4 @@
+/*
 
 console.log("========== union type ==============");
 interface UnionCar{
@@ -64,4 +65,4 @@ const motorbike: Vehicle & Door = {
 }
 
 motorbike.open();
-motorbike.start();
+motorbike.start();*/
