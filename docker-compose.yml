@@ -1,0 +1,27 @@
+services:
+  db:
+    image: postgres:17
+    container_name: auth-db
+    environment:
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: app_pw
+      POSTGRES_DB: appdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U app -d appdb"]
+      interval: 3s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    container_name: auth-redis
+    ports:
+      - "6379:6379"
+    # 로컬 개발이면 비번 없이 OK. 운영은 requirepass 설정 권장.
+    command: ["redis-server", "--appendonly", "yes"]
+
+volumes:
+  dbdata:
