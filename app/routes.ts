@@ -16,6 +16,8 @@ export default [
         route("register", "./routes/auth/register.tsx"),
     ]),
 
+    route("dashboard", "./routes/dashboard.tsx"),
+
     ...prefix("concerts", [
         index("./concerts/home.tsx"),
         route(":city", "./concerts/city.tsx"),
